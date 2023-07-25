@@ -13,9 +13,19 @@ import "slick-carousel/slick/slick-theme.css";
 import Mynaveclass from './components/Mynaveclass';
 import Preloader from './components/Preloader';
 import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Topbutton from './components/Topbutton';
 
 function App() {
+  // Aos start
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+  // Aos end
 
+  // preloader-start
   useEffect (() => {
    
     const preloader = document.getElementById("preloader")
@@ -26,9 +36,12 @@ function App() {
     }, 3000)
     document.body.classList.add("overflow-hidden")
   }, [])
-   document.body.classList.remove("overflow-hidden")
+  document.body.classList.remove("overflow-hidden")
+  // preloader-end
+
+
   return ( 
-  <div>
+  <div className='overflow-hidden'>
     <Preloader/>
     <Mynaveclass/>
     <Investcoin/>
@@ -37,6 +50,7 @@ function App() {
     <Standard/>
     <Button/>
     <Footer/>
+    <Topbutton/>
   </div>
   )
 }

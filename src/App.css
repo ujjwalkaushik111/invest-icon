@@ -125,17 +125,24 @@
   background-size: cover;
 }
 
+.img-up {
+  transition: all 500ms linear;
+}
+
+.img-up:hover {
+  transform: translateY(-30%);
+}
 
 .join_btn {
   border: none;
   padding: 16px 32px;
   border-radius: 35px;
-  background-color: #fff;
+  background-color:  #2091F9;
+  transition: all 500ms linear;
 }
 
 .join_btn:hover {
-  background-color: #2091F9;
-  color: #fff;
+  box-shadow: 0px 0px 20px #2091F9;
 }
 
 .more_btn {
@@ -146,8 +153,9 @@
 }
 
 .more_btn:hover {
-  background-color: #2091F9;
-  color: #FFF;
+  /* background-color: #2091F9; */
+  color: #2091F9;
+  box-shadow: 0px 0px 20px #2091F9;
 }
 
 /* Hawn-section */
@@ -186,8 +194,8 @@
   background-color: #252B42;
 }
 
-.w-530 {
-  max-width: 530px;
+.w-390 {
+  max-width: 390px;
 }
 
 .Button-H {

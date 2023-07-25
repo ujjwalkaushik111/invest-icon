@@ -10,7 +10,7 @@ const Footer = () => {
     <section className="bg-gray py-5">
       <Container className="my-5">
         <Row>
-          <Col lg={6}>
+          <Col lg={6}data-aos="fade-right" data-aos-duration="3000">
             <div className="d-sm-flex align-items-start">
               <img className="ps-5 ps-sm-0" src={imgsvg} alt="#" />
               <div className="ps-5 position-relative">
@@ -20,7 +20,7 @@ const Footer = () => {
               </div>
             </div>
           </Col>
-          <Col lg={6} className="mt-5 mt-lg-0">
+          <Col lg={6} className="mt-5 mt-lg-0"data-aos="fade-left" data-aos-duration="3000">
             <Row>
               <Col xs={4}>
                 <ul>
@@ -42,7 +42,7 @@ const Footer = () => {
                 </ul>
               </Col>
 
-              <Col xs={4}>
+              <Col xs={4} data-aos="fade-up-right"data-aos-duration="1500">
                 <ul>
                   <li>
                     <Link className="ff_poppins fw-normal fs_sm text_ffffff opacity75 link">Facebook</Link>

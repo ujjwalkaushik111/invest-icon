@@ -49,8 +49,8 @@ const Standard = () => {
           Самые оптимальные варианты инвестиций. Каждый найдет свой путь и{" "}
           <span className="d-block">начнет уверенно шагать по нему.</span>
         </p>
-        <Slider {...Slidercreate22} className="my-5">
-          <Col lg={4} className="d-flex justify-content-center">
+        <Slider {...Slidercreate22}>
+          <Col lg={4} className="d-flex justify-content-center py-5"data-aos="zoom-out-up"data-aos-duration="3000">
             <div className="Box_1 mb-lg-0 mb-4 ">
               <h3 className="ff_open_sans fw-bold text_252B42 fs_2xmd">FREE</h3>
               <p className="ff_open_sans fw-normal text_222B32 fs_2xsm text-center">
@@ -88,7 +88,7 @@ const Standard = () => {
               <button className="B-order">Order Now</button>
             </div>
           </Col>
-          <Col lg={4} className="d-flex justify-content-center">
+          <Col lg={4} className="d-flex justify-content-center py-5"data-aos="zoom-out-up"data-aos-duration="3000">
             <div className="Box_1 mb-lg-0 mb-4 ">
               <h3 className="ff_open_sans fw-bold text_252B42 fs_2xmd">
                 STANDARD
@@ -129,7 +129,7 @@ const Standard = () => {
               <button className="B-order">Order Now</button>
             </div>
           </Col>
-          <Col lg={4} className="d-flex justify-content-center">
+          <Col lg={4} className="d-flex justify-content-center py-5"data-aos="zoom-out-up"data-aos-duration="3000">
             <div className="Box_1 mb-lg-0 mb-4 ">
               <h3 className="ff_open_sans fw-bold text_252B42 fs_2xmd">
                 BUSINESS

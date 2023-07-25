@@ -48,8 +48,43 @@ const Hawn = () => {
     ],
   };
 
+  const Slidercreate11 = {
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    arrows:false,
+    autoplaySpeed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+
+      {
+        breakpoint: 544,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+
+    ],
+
+  };
+
+
   return (
-    <section className="py-5 my-5">
+    <section className="py-5 my-5" data-aos="flip-down"data-aos-duration="3000">
       <h2 className="text-center ff_open_sans text_252B42 fs_2lg fw_normal">
         Наши площадки
       </h2>
@@ -60,31 +95,31 @@ const Hawn = () => {
         </span>
       </p>
       <Container className="mt-5 mt-lg-0 py-5">
-        <div class="d-flex justify-content-between align-items-center overflow-auto gap-4">
-          <div class="justify-content-center filter_darkgrey animate__animated  animate__infinite animate__slower animate__wobble">
+      <Slider {...Slidercreate11}>
+          <div class=" filter_darkgrey animate__animated  animate__infinite animate__slower animate__wobble py-2">
             <img src={img11} alt="#" />
           </div>
-          <div class="justify-content-center filter_darkgrey animate__animated  animate__infinite animate__slower animate__wobble">
+          <div class=" filter_darkgrey animate__animated  animate__infinite animate__slower animate__wobble py-2">
             <img src={img22} alt="#" />
           </div>
-          <div class="justify-content-center filter_darkgrey animate__animated  animate__infinite animate__slower animate__wobble">
+          <div class=" filter_darkgrey animate__animated  animate__infinite animate__slower animate__wobble py-2">
             <img src={img33} alt="#" />
           </div>
-          <div class="justify-content-center filter_darkgrey animate__animated  animate__infinite animate__slower animate__wobble">
+          <div class=" filter_darkgrey animate__animated  animate__infinite animate__slower animate__wobble py-2">
             <img src={img44} alt="#" />
           </div>
-          <div class="justify-content-center filter_darkgrey mt-5 mt-md-0 animate__animated  animate__infinite animate__slower animate__wobble">
+          <div class=" filter_darkgrey animate__animated  animate__infinite animate__slower animate__wobble py-2">
             <img src={img55} alt="#" />
           </div>
-          <div class="justify-content-center filter_darkgrey mt-5 mt-md-0 animate__animated  animate__infinite animate__slower animate__wobble">
+          <div class=" filter_darkgrey animate__animated  animate__infinite animate__slower animate__wobble py-2">
             <img src={img66} alt="#" />
           </div>
-        </div>
+        </Slider>
         <div className="d-flex my-5 justify-content-center">
           <div className="line11 text-center "></div>
         </div>
 
-        <div className="py-5">
+        <div className="py-5"data-aos="fade-left" data-aos-duration="3000">
           <h2 className="text-center mt-5 pt-5 ff_open_sans text_252B42 fw-normal fs_xlg">
             Отзывы наших партнеров
           </h2>

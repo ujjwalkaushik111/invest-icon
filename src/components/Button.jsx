@@ -12,7 +12,7 @@ const Button = () => {
           
         </p>
         <Row>
-          <Col xl={6} className="mt-5 ">
+          <Col xl={6} className="mt-5"data-aos="fade-right" data-aos-duration="3000">
             <div className="py-4 ">
               <input
                 className="width-lg-100 Button_input ps-4 "
@@ -37,7 +37,7 @@ const Button = () => {
             <div className="mt-5"><button className="Button-OT mt-5">Отправить</button></div>
             
           </Col>
-          <Col xl={6}>
+          <Col xl={6} data-aos="fade-left" data-aos-duration="3000">
           <img className="width-lg-100" src={Helloboy} alt="#" />
           </Col>
         </Row>

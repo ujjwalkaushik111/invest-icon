@@ -28,9 +28,9 @@ const Mynaveclass = () => {
                             </ul>
                         </div>
                         <div>
-                            <a className='me-3' href="https://instagram.com"><img src={instagram} alt="instagram" /></a>
-                            <a className='me-3' href="https://telegram.com"><img src={telegram} alt="telegram" /></a>
-                            <a href="https://whatsapp.com"><img src={whatsapp} alt="whatsapp" /></a>
+                            <a className='me-3' href="https://instagram.com"><img className='img-up' src={instagram} alt="instagram" /></a>
+                            <a className='me-3' href="https://telegram.com"><img className='img-up' src={telegram} alt="telegram" /></a>
+                            <a href="https://whatsapp.com"><img className='img-up' src={whatsapp} alt="whatsapp" /></a>
                         </div>
                         <span title="open"
                             className="d-inline d-lg-none fw-bold fs-1 text-white"
@@ -40,20 +40,18 @@ const Mynaveclass = () => {
                 </Container>
             </header>
             <Container className='my-5 py-5'>
-                <Row>
-                    <Col lg={6}>
-                    </Col>
-                    <Col lg={6}>
+                <Row className='justify-content-end'>
+                    <Col lg={6} data-aos="fade-left" data-aos-duration="3000">
                         <h3 className='ff_open_sans fs_5md fw-normal text_8093F6 mb-3'>Лучший проект</h3>
                         <h1 className='ff_open_sans fs_2xl fw-bolder text_ffffff mb-3'>Крипто
                             <span className='d-block text_8093F6'>Инвестиции</span> </h1>
                         <p className='ff_open_sans fs_5md fw-normal text_ffffff mb-4'>Международный проект инвестиции в криптовалюту и не только. Мы заработаем если вы заработаете!</p>
                         <div className='mb-5'>
-                            <button className='ff_open_sans fs_2xmd fw-bold text_252B42 join_btn me-5 mb-3'>Присоединиться</button>
+                            <button className='ff_open_sans fs_2xmd fw-bold text_ffffff join_btn me-5 mb-3'>Присоединиться</button>
                             <button className='ff_open_sans fs_2xmd fw-bold text_252B42 more_btn mb-3'>Подробнее</button>
                         </div>
                         <div className='d-flex align-items-center'>
-                            <div className=' me-5 align-items-center d-sm-flex'>
+                            <div className='me-5 align-items-center d-sm-flex'>
                                 <h2 className='ff_open_sans fw-bold text_8093F6 fs_xl mb-0 me-2'>330</h2>
                                 <p className='ff_open_sans fs_xsm fw-normal text_8093F6 mb-0'>Довольных
                                     <span className='d-block'>клиентов</span></p>
